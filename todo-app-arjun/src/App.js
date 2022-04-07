@@ -7,7 +7,7 @@ import firebase from "firebase";
 function App() {
   const [todos, setTodos] = useState([]);
   const [input, setInput] = useState("");
-
+  // adding use effect hook
   useEffect(() => {
     db.collection("todos")
       .orderBy("timestamp", "desc")
